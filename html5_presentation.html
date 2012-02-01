@@ -1,0 +1,228 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML 5</title>
+    
+    <meta name="description" content="HTML 5 presentation on features">
+    <meta name="author" content="Andrew Steele" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+    <div id="intro" class="step slide" data-x="-1000" data-y="-1500">
+        <q>let's start with a brief history lesson</q>
+    </div>
+    <div id="history" class="step slide" data-x="0" data-y="-1500">
+        <q><strong>Web Technologies Timeline</strong></q>
+        <ul id="timeline">
+            <li data-auto=""><span class="year">1991</span> <span class="html">HTML</span></li>
+            <li data-auto=""><span class="year">1994</span> <span class="html">HTML 2</span></li>
+            <li data-auto=""><span class="year">1996</span> <span class="css">CSS 1</span> + <span class="js">JavaScript</span></li>
+            <li data-auto=""><span class="year">1997</span> <span class="html">HTML 4</span></li>
+            <li data-auto=""><span class="year">1998</span> <span class="css">CSS 2</span></li>
+            <li data-auto=""><span class="year">2000</span> <span class="html">XHTML 1</span></li>
+            <li><span class="year"><em class="stroke">2002</em></span> <span class="css">Tableless Web Design</span></li>
+            <li><span class="year"><em class="stroke">2005</em></span> <span class="js">AJAX</span></li>
+            <li><span class="year"><em class="stroke">2009</em></span> <span class="html">HTML 5</span></li>
+        </ul>
+    </div>
+    <div id="equals" class="step slide" data-x="1000" data-y="-1500">
+        <q><span class="html">HTML</span>
+        +
+        <span class="css">CSS</span>
+        +
+        <span class="js">JS</span><br />
+        it's the combination of these that take the web to the next level</q>
+    </div>
+    
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">put simply</span>
+        <h1>HTML5</h1>
+        <span class="footnote">is awesome</span>
+    </div>
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>Before we go much farther I should note this presentation<br/>
+        borrows heavily from <a href="http://bartaz.github.com/impress.js">impress.js</a> and
+        <a href="http://slides.html5rocks.com">HTML5 Rocks</a>.</p>
+    </div>
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>remember your <b>big</b> <span class="thoughts">pain points?</span></p>
+    </div>
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p><b>HTML5</b> helps eliminate them</p>
+    </div>
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>by adding new <b class="positioning">elements</b>, <b class="rotating">selectors</b> and <b class="scaling">input types</b></p>
+    </div>
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p>not <b>everything</b> is new but it's <b>important</b> to know what is</p>
+    </div>
+     <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>so let's cover the<br />basics of</p>
+    </div>
+    <div id="elements" class="step slide" data-x="6200" data-y="3000" data-z="-100" data-rotate-x="-40">
+        <pre class="two-column prettyprint"><span class="tag">&lt;body&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">header</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;</span><b><span class="tag">hgroup</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;h1&gt;</span><span class="pln">Page title</span><span class="tag">&lt;/h1&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;h2&gt;</span><span class="pln">Page subtitle</span><span class="tag">&lt;/h2&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;/hgroup&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/header&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">nav</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;ul&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;Navigation...<br>&nbsp; &nbsp;</span><span class="tag">&lt;/ul&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/nav&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">section</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;</span><b><span class="tag">article</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;</span><b><span class="tag">header</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;h1&gt;</span><span class="pln">Title</span><span class="tag">&lt;/h1&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/header&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;section&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;Content...<br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/section&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;/article&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;article&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;header&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;h1&gt;</span><span class="pln">Title</span><span class="tag">&lt;/h1&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/header&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;section&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;Content...<br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/section&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;/article&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/section&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">aside</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;Top links...<br>&nbsp; </span><span class="tag">&lt;/aside&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">figure</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">/&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;</span><b><span class="tag">figcaption</span></b><span class="tag">&gt;</span><span class="pln">Chart 1.1</span><span class="tag">&lt;/figcaption&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/figure&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">footer</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;Copyright ©<br>&nbsp; &nbsp;</span><span class="tag">&lt;</span><b><span class="tag">time</span></b><span class="pln"> </span><b><span class="atn">datetime</span></b><span class="pun">=</span><span class="atv">"2010-11-08"</span><span class="tag">&gt;</span><span class="pln">2010</span><span class="tag">&lt;/time&gt;</span><span class="pln">.<br>&nbsp; </span><span class="tag">&lt;/footer&gt;</span><span class="pln"><br></span><span class="tag">&lt;/body&gt;</span></pre>
+    </div>
+    <div id="apps" class="step slide" data-x="7200" data-y="3000" data-z="-100" data-rotate-x="-40">
+        <span class="html">HTML</span><header>Markup for Applications</header>
+        <pre class="prettyprint"><span class="tag">&lt;</span><b><span class="tag">meter</span></b><span class="pln"> </span><b><span class="atn">min</span></b><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"100"</span><span class="pln"> </span><b><span class="atn">low</span></b><span class="pun">=</span><span class="atv">"40"</span><span class="pln"> </span><b><span class="atn">high</span></b><span class="pun">=</span><span class="atv">"90"</span><span class="pln"> </span><b><span class="atn">optimum</span></b><span class="pun">=</span><span class="atv">"100"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"91"</span><span class="tag">&gt;</span><span class="pln">A+</span><span class="tag">&lt;/</span><b><span class="tag">meter</span></b><span class="tag">&gt;</span><span class="pln"><br>Your score is: </span><meter value="91" min="0" max="100" low="40" high="90" optimum="100"><span class="pln">A+</span></meter><span class="pln"><br><br></span><span class="tag">&lt;</span><b><span class="tag">progress</span></b><span class="tag">&gt;</span><span class="pln">working...</span><span class="tag">&lt;/</span><b><span class="tag">progress</span></b><span class="tag">&gt;</span><span class="pln"><br>Download is: </span><progress><span class="pln">working...</span></progress><span class="pln"><br><br></span><span class="tag">&lt;</span><b><span class="tag">progress</span></b><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"75"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"100"</span><span class="tag">&gt;</span><span class="pln">3/4 complete</span><span class="tag">&lt;/</span><b><span class="tag">progress</span></b><span class="tag">&gt;</span><span class="pln"><br>Goal is: </span><progress value="75" max="100"><span class="pln">3/4 complete</span></progress></pre>
+    </div>
+    <div id="descriptive-links" class="step slide" data-x="6200" data-y="4000" data-z="-100" data-rotate-x="-40">
+        <span class="html">HTML</span><header>Descriptive Links</header>
+        <pre class="prettyprint"><span class="tag">&lt;link</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"alternate"</span></b><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"application/rss+xml"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://myblog.com/feed"</span><span class="tag">/&gt;</span><span class="pln"><br></span><span class="tag">&lt;link</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"icon"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/favicon.ico"</span><span class="tag">/&gt;</span><span class="pln"><br></span><span class="tag">&lt;link</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"pingback"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://myblog.com/xmlrpc.php"</span><span class="tag">/&gt;</span><span class="pln"><br></span><span class="tag">&lt;link</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"prefetch"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://myblog.com/main.php"</span><span class="tag">/&gt;</span><span class="pln"><br>...<br><br></span><span class="tag">&lt;a</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"archives"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://myblog.com/archives"</span><span class="tag">&gt;</span><span class="underlined"><span class="pln">old posts</span></span><span class="tag">&lt;/a&gt;</span><span class="pln"><br></span><span class="tag">&lt;a</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"external"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://notmysite.com"</span><span class="tag">&gt;</span><span class="underlined"><span class="pln">tutorial</span></span><span class="tag">&lt;/a&gt;</span><span class="pln"><br></span><span class="tag">&lt;a</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"license"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.apache.org/licenses/LICENSE-2.0"</span><span class="tag">&gt;</span><span class="underlined"><span class="pln">license</span></span><span class="tag">&lt;/a&gt;</span><span class="pln"><br></span><span class="tag">&lt;a</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://notmysite.com/sample"</span><span class="tag">&gt;</span><span class="underlined"><span class="pln">wannabe</span></span><span class="tag">&lt;/a&gt;</span><span class="pln"><br></span><span class="tag">&lt;a</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"tag"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://myblog.com/category/games"</span><span class="tag">&gt;</span><span class="underlined"><span class="pln">games posts</span></span><span class="tag">&lt;/a&gt;</span><span class="pln"><br>...</span></pre>
+    </div>
+    <div id="form-input" class="step slide" data-x="7200" data-y="4000" data-z="-100" data-rotate-x="-40">
+    <span class="html">HTML</span><header>Form Inputs</header>
+            <style>
+            
+            .form-inputs input {
+              float: right;
+              border: 1px solid #CCC;
+              -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset;
+              -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset;
+              -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset;
+              box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset;
+              padding: 3px 5px;
+            }
+            input[required] {
+              border-color: #88a;
+              -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, rgba(0, 0, 255, 0.5) 0px 0px 3px;
+              -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, rgba(0, 0, 255, 0.5) 0px 0px 3px;
+              -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, rgba(0, 0, 255, 0.5) 0px 0px 3px;
+              box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, rgba(0, 0, 255, 0.5) 0px 0px 3px;
+            }
+            input:invalid {
+              border-color: #e88;
+              -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, 0 0 5px rgba(255, 0, 0, .8);
+              -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, 0 0 5px rgba(255, 0, 0, .8);
+              -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, 0 0 5px rgba(255, 0, 0, .8);
+              box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, 0 0 5px rgba(255, 0, 0, .8);
+            }
+            </style>
+            
+<pre class="form-inputs prettyprint"><input type="text" required=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><b><span class="atn">required</span></b><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="email" value="some@email.com"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">email</span></b><span class="atv">"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"some@email.com"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="date" min="2010-08-14" max="2011-08-14" value="2010-08-14"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">date</span></b><span class="atv">"</span><span class="pln"> </span><b><span class="atn">min</span></b><span class="pun">=</span><span class="atv">"2010-08-14"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"2011-08-14"</span><span class="pln"><br />             </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"2010-08-14"</span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="range" min="0" max="50" value="10"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">range</span></b><span class="atv">"</span><span class="pln"> </span><b><span class="atn">min</span></b><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"50"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"10"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input results="10" type="search" placeholder="Search..."><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">search</span></b><span class="atv">"</span><span class="pln"> </span><b><span class="atn">results</span></b><span class="pun">=</span><span class="atv">"10"</span><span class="pln"> </span><b><span class="atn">placeholder</span></b><span class="pun">=</span><span class="atv">"Search..."</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="tel" placeholder="(555) 555-5555" pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">tel</span></b><span class="atv">"</span><span class="pln"> &nbsp;</span><b><span class="atn">placeholder</span></b><span class="pun">=</span><span class="atv">"(555) 555-5555"</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><b><span class="atn">pattern</span></b><span class="pun">=</span><span class="atv">"^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="color" placeholder="e.g. #bbbbbb"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">color</span></b><span class="atv">"</span><span class="pln"> </span><b><span class="atn">placeholder</span></b><span class="pun">=</span><span class="atv">"e.g. #bbbbbb"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="number" step="1" min="-5" max="10" value="0"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">number</span></b><span class="atv">"</span><span class="pln"> </span><b><span class="atn">step</span></b><span class="pun">=</span><span class="atv">"1"</span><span class="pln"> </span><b><span class="atn">min</span></b><span class="pun">=</span><span class="atv">"-5"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"10"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br></span><div style="height:0px; clear:both;"><span class="pln"><br></span></div></pre>
+    </div>
+    <div id="css-columns" class="step slide" data-x="6200" data-y="5000" data-z="-100" data-rotate-x="-40">
+    <span class="css">CSS</span><header>Columns</header>
+            <pre class="prettyprint"><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><b><span class="pln">column</span><span class="pun">-</span><span class="pln">count</span></b><span class="pun">:</span><span class="pln"> </span><span id="columns-no-value">1</span><span class="pun">;</span><span class="pln"> </span><input type="range" min="1" max="6" value="2" onchange="changeColumnNoSlider(event)"><span class="pln"><br></span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><b><span class="pln">column</span><span class="pun">-</span><span class="pln">rule</span></b><span class="pun">:</span><span class="pln"> </span><span class="lit">1px</span><span class="pln"> solid </span><span class="com">#bbb;</span><span class="pln"><br></span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><b><span class="pln">column</span><span class="pun">-</span><span class="pln">gap</span></b><span class="pun">:</span><span class="pln"> </span><span class="lit">2em</span><span class="pun">;</span></pre>
+
+            <div id="columns-no-example" class="example" style="-webkit-column-count: 1; font-size:65%;">
+              <p>
+                In March 1936, an unusual confluence of forces occurred in 
+                Santa Clara County.
+              </p>
+              <p>
+                A long cold winter delayed the blossoming of the millions of 
+                cherry, apricot, peach, and prune plum trees covering hundreds 
+                of square miles of the Valley floor. Then, unlike many years, 
+                the rains that followed were light and too early to knock 
+                the blossoms from their branches.
+              </p>
+              <p>
+                Instead, by the billions, they all burst open at once. 
+                Seemingly overnight, the ocean of green that was the Valley 
+                turned into a low, soft, dizzyingly perfumed cloud of pink 
+                and white. Uncounted bees and yellow jackets, newly born, 
+                raced out of their hives and holes, overwhelmed by this 
+                impossible banquet.
+              </p>
+              <p>
+                Then came the wind.
+              </p>
+              <p>
+                It roared off the Pacific Ocean, through the nearly 
+                uninhabited passes of the Santa Cruz Mountains and then, 
+                flattening out, poured down into the great alluvial plains 
+                of the Valley. A tidal bore of warm air, it tore along the 
+                columns of trees, ripped the blossoms apart and carried them 
+                off in a fluttering flood of petals like foam rolling up a 
+                beach.
+              </p>
+              <p>
+                This perfumed blizzard hit Stevens Creek Boulevard, a two-lane
+                road with a streetcar line down its center, that was the main
+                road in the West Valley. It froze traffic, as drivers found
+                themselves lost in a soft, muted whiteout. Only the streetcar,
+                its path predetermined, passed on...
+              </p>
+            </div>
+            <script defer="">
+                function changeColumnNoSlider(event) {
+                    var val = event.target.value;
+                    document.getElementById('columns-no-value').textContent = val;
+                    var el = document.getElementById('columns-no-example');
+                    el.style.webkitColumnCount = val;
+                    el.style.MozColumnCount = val;
+                }
+          </script>
+    </div>
+
+    <div id="css-selectors" class="step slide" data-x="7200" data-y="5000" data-z="-100" data-rotate-x="-40">
+          <style>
+            .row {
+              padding: 4px;
+            }
+            .row:nth-child(even) {
+              background: #bbb;
+              color: white;
+            }
+          </style> 
+          <header><span class="css">CSS</span> <h1>CSS Selectors</h1></header>
+          <section class="left">
+            <h2>Selectors</h2>
+<pre class="prettyprint"><span class="pun">.</span><span class="pln">row</span><span class="pun">:</span><b><span class="pln">nth</span><span class="pun">-</span><span class="pln">child</span><span class="pun">(</span><span class="pln">even</span><span class="pun">)</span></b><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; background</span><span class="pun">:</span><span class="pln"> </span><span class="com">#dde;</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"><br></span><span class="pun">.</span><span class="pln">row</span><span class="pun">:</span><b><span class="pln">nth</span><span class="pun">-</span><span class="pln">child</span><span class="pun">(</span><span class="pln">odd</span><span class="pun">)</span></b><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; background</span><span class="pun">:</span><span class="pln"> white</span><span class="pun">;</span><span class="pln"><br></span><span class="pun">}</span></pre>
+            <div class="example"> 
+              <div class="row">Row 1</div> 
+              <div class="row">Row 2</div> 
+              <div class="row">Row 3</div> 
+              <div class="row">Row 4</div> 
+            </div>  
+            <h2>Image-like display</h2> 
+            <pre class="prettyprint"><span class="pln">div </span><span class="pun">{</span><span class="pln"><br>&nbsp; display</span><span class="pun">:</span><span class="pln"> </span><b><span class="kwd">inline</span><span class="pun">-</span><span class="pln">block</span></b><span class="pun">;</span><span class="pln"><br></span><span class="pun">}</span></pre> 
+          </section> 
+          
+          <section class="right"> 
+            <h2>Specific attributes</h2> 
+            <pre class="prettyprint"><span class="pln">input</span><b><span class="pun">[</span><span class="pln">type</span><span class="pun">=</span><span class="str">"text"</span><span class="pun">]</span></b><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; background</span><span class="pun">:</span><span class="pln"> </span><span class="com">#eee;</span><span class="pln"><br></span><span class="pun">}</span></pre>          
+            
+            <h2>Negation</h2> 
+            <pre class="prettyprint"><b><span class="pun">:</span><span class="kwd">not</span></b><span class="pun">(.</span><span class="pln">box</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#00c; </span><span class="pln"><br></span><span class="pun">}</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br></span><b><span class="pun">:</span><span class="kwd">not</span></b><span class="pun">(</span><span class="pln">span</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; display</span><span class="pun">:</span><span class="pln"> block</span><span class="pun">;</span><span class="pln"> <br></span><span class="pun">}</span><span class="pln"> &nbsp;</span></pre> 
+
+            <h2>More specific targetting</h2> 
+            <pre class="prettyprint"><span class="pln">h2</span><span class="pun">:</span><b><span class="pln">first</span><span class="pun">-</span><span class="pln">child</span></b><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="pun">...</span><span class="pln"> </span><span class="pun">}</span><span class="pln"><br><br>div</span><span class="pun">.</span><span class="pln">text </span><b><span class="pun">&gt;</span></b><span class="pln"> div </span><span class="pun">{</span><span class="pln"> </span><span class="pun">...</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> <br>h2 </span><b><span class="pun">+</span></b><span class="pln"> header </span><span class="pun">{</span><span class="pln"> </span><span class="pun">...</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span></pre>            
+          </section>
+          <footer><a href="http://www.w3.org/TR/CSS2/selector.html#pattern-matching">CSS2 selectors</a> and <a href="http://www.w3.org/TR/css3-selectors/#selectors">CSS3 selectors</a> introduced some of the ones demonstrated here.</footer>
+        <span class="counter"></span>
+    </div>
+
+    <div id="resources" class="step slide" data-x="6700" data-y="6000" data-z="-100" data-rotate-x="-40">
+    <header>Resources</header><br />
+    <p>
+    <dl>
+    <dt>HTML5 Rocks</dt>
+    <dd><a href="http://www.html5rocks.com/">http://www.html5rocks.com/</a></dd>
+    <dt>HTML5 Please</dt>
+    <dd><a href="http://html5please.us/">http://html5please.us/</a></dd>
+    <dt>Can I Use</dt>
+    <dd><a href="http://caniuse.com/">http://caniuse.com/</a></dd>
+    <dt>Modernizr</dt>
+    <dd><a href="http://www.modernizr.com/">http://www.modernizr.com/</a></dd>
+    </dl>
+    </p>
+    </div>
+
+    <div id="questions" class="step" data-x="8000" data-y="4000" data-z="10000" data-rotate-x="180" data-scale="2">
+        <p>any questions?</p>
+        <q>Andrew Steele<br />twitter: @ahsteele<br />blog: <a href="http://steelebit.com" />steelebit.com</a></q>
+    </div>
+</div>
+
+<script src="js/impress.js" type="text/javascript"></script>
+
+</body>
+</html>
