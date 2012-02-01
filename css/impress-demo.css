@@ -189,7 +189,7 @@ a:hover {
     font-size: 64px;
     position: absolute;
     top: -0.5em;
-    left: 1.5em;
+    left: 0.4em;
     
     -webkit-transform: translateZ(20px);
     -moz-transform:    translateZ(20px);
@@ -209,7 +209,10 @@ a:hover {
 }
 
 #title .footnote {
-    font-size: 32px;
+    font-size: 64px;
+    position: absolute;
+    top: 3.1em;
+    left: 5.5em;
 }
 
 /* big thoughts */
